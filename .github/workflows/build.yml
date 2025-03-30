@@ -67,8 +67,8 @@ jobs:
           fi
           echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_OUTPUT
           echo "TAG=$TAG" >> $GITHUB_OUTPUT
-          echo "::set-env name=IMAGE_NAME::$IMAGE_NAME"
-          echo "::set-env name=DEFAULT_TAG::$TAG"
+          echo "IMAGE_NAME=$IMAGE_NAME" >> $GITHUB_ENV
+          echo "DEFAULT_TAG=$TAG" >> $GITHUB_ENV
 
       # Image metadata for https://artifacthub.io/ - This is optional but is highly recommended so we all can get a index of all the custom images
       # The metadata by itself is not going to do anything, you choose if you want your image to be on ArtifactHub or not.
