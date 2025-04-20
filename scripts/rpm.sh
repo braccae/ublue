@@ -16,6 +16,11 @@ dnf5 install -y kontact \
     kaddressbook \
     korganizer 
 
+## kvm/qemu
+dnf5 install -y qemu \
+    qemu-kvm-core \
+    qemu-img \
+
 ## Cleanup
 
 dnf5 -y copr disable pgdev/ghostty
