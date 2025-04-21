@@ -17,9 +17,8 @@ dnf5 install -y kontact \
     korganizer 
 
 ## kvm/qemu
-dnf5 install -y qemu \
-    qemu-kvm-core \
-    qemu-img \
+dnf5 install -y \
+    qemu-kvm
 
 ## Cleanup
 
