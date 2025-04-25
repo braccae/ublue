@@ -6,7 +6,7 @@ dnf5 config-manager addrepo --from-repofile=https://download.opensuse.org/reposi
 # Ghostty UNOFFICIAL
 dnf5 -y copr enable pgdev/ghostty
 
-dnf5 install -y albert ghostty waypipe tailscale zsh input-leap
+dnf5 install -y albert ghostty waypipe tailscale zsh input-leap rclone
 
 
 ## Akonadi suite

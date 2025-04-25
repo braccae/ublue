@@ -6,22 +6,6 @@ Based on ublue aurora-dx:stable
 
 ## Changes
 
-### Flatpak
-
-Added:
-- Moonlight
-- Vesktop
-- plexamp
-- obsidian notes
-- geary
-- KeepassXC
-- Zen Browser
-- Zed
-
-Removed:
-- Firefox
-- Thunderbird
-- Libreoffice
 
 ### RPM
 
@@ -29,10 +13,14 @@ Added:
 - waypipe
 - ghostty
 - albert
-- zram
-- zram-generator
+- kontact
+- kmail
+- kaddressbook
+- korganizer
+- tailscale
+- zsh
+- input-leap
+- rclone
 
-Removed:
-- 
-- 
-- 
+Changed:
+- zram to 16GiB/2 (16GiB for 32GiB+ RAM)
