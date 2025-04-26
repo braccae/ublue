@@ -22,7 +22,7 @@ set -ouex pipefail
 #### Example for enabling a System Unit File
 
 # systemctl enable podman.socket
-bash /tmp/rpm.sh
+bash /tmp/packages/rpm.sh
 #bash /tmp/zen.sh
 #bash /tmp/flatpak.sh
 
