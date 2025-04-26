@@ -23,6 +23,7 @@ set -ouex pipefail
 
 # systemctl enable podman.socket
 bash /tmp/rpm.sh
+#bash /tmp/zen.sh
 #bash /tmp/flatpak.sh
 
 
