@@ -17,7 +17,8 @@ else
         tailscale \
         zsh \
         input-leap \
-        rclone
+        rclone \
+        podman-docker
     
     printf %b "-------------------------------\n$NAME setup was successful!\n-------------------------------\n"
 
