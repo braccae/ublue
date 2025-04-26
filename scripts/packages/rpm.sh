@@ -2,8 +2,8 @@
 
 
 
-for package in $(ls packages/rpm.d); do
-    bash packages/rpm.d/$package
+for package in $(ls /tmp/packages/rpm.d); do
+    bash /tmp/packages/rpm.d/$package
 
 done
 
