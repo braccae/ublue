@@ -13,13 +13,13 @@ if [ "$DISABLED" = true ]; then
     exit 0
 else
     cat <<EOF > /etc/yum.repos.d/adoptium.repo
-    [Adoptium]
-    name=Adoptium
-    baseurl=https://packages.adoptium.net/artifactory/rpm/fedora/42/$(uname -m)
-    enabled=1
-    gpgcheck=1
-    gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
-    EOF
+[Adoptium]
+name=Adoptium
+baseurl=https://packages.adoptium.net/artifactory/rpm/fedora/42/$(uname -m)
+enabled=1
+gpgcheck=1
+gpgkey=https://packages.adoptium.net/artifactory/api/gpg/key/public
+EOF
 
     dnf5 check
 
