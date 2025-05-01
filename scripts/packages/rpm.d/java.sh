@@ -23,9 +23,9 @@ EOF
 
     dnf5 check
 
-    dnf5 install -y java-17-openjre
-    dnf5 install -y java-8-openjre
-    dnf5 install -y java-21-openjre
+    dnf5 install -y java-17-openjdk
+    dnf5 install -y java-8-openjdk
+    dnf5 install -y java-21-openjdk
 
     
     
