@@ -68,7 +68,8 @@ else
         qemu-user-static \
         qemu-user-static-aarch64 \
         qemu-user-static-arm \
-        qemu-user-static-riscv
+        qemu-user-static-riscv \
+        libguestfs
 
     printf %b "-------------------------------\n$NAME setup was successful! \n-------------------------------\n"
 
