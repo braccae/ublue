@@ -16,7 +16,10 @@ else
         kmail \
         merkuro \
         konsole \
-        yakuake
+        yakuake \
+        qt6-qtlocation
+    # Adding qt6-qtlocation because merkuro doesn't currently pull all dependencies currectly
+    # https://discussion.fedoraproject.org/t/merkuro-calendar-doenst-start-on-fedora-42/151692
 
 
 
