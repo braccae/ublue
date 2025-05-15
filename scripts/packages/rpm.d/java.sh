@@ -23,15 +23,12 @@ EOF
 
     dnf5 check
 
-    dnf5 install -y java-17-openjdk
-    dnf5 install -y java-8-openjdk
-    dnf5 install -y java-21-openjdk
+    dnf5 install -y \
+    java-21-openjdk
 
-    
-    
+
+
     printf %b "-------------------------------\n$NAME setup was successful! \n-------------------------------\n"
 
     exit 0
 fi
-
-

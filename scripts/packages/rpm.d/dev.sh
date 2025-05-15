@@ -24,6 +24,8 @@ else
     ## sqlite browser
     dnf5 install -y sqlitebrowser
 
+    dnf5 install -y kind
+
     ## enable terra for zed
     dnf5 config-manager add-repo --from-repofile=https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     dnf5 install terra-release -y

@@ -3,7 +3,7 @@
 ###
 # Configuration
 ###
-DISABLED=false
+DISABLED=true
 ####
 
 
@@ -20,7 +20,7 @@ else
     ## Cleanup
 
     dnf5 -y copr disable pgdev/ghostty
-    
+
     printf %b "-------------------------------\n$NAME setup was successful! \n-------------------------------\n"
 
     exit 0

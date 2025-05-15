@@ -12,16 +12,14 @@ if [ "$DISABLED" = true ]; then
     printf %b "-------------------------------\n$NAME is disabled, skipping...\n-------------------------------\n"
     exit 0
 else
-    ## Akonadi suite
-    dnf5 install -y kontact \
+    dnf5 install -y \
         kmail \
-        kaddressbook \
-        korganizer 
+        merkuro \
+        konsole \
+        yakuake
 
-    ## Konsole
 
-    dnf5 install -y konsole
-    
+
     printf %b "-------------------------------\n$NAME setup was successful! \n-------------------------------\n"
 
     exit 0
