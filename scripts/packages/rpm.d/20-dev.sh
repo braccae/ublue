@@ -21,7 +21,7 @@ else
         sqlitebrowser
 
         group install --with-optional virtualization
-        dnf5 install -y \
+        dnf5 install -y --skip-unavailable \
             qemu-audio-dbuser \
             qemu-audio-pipewireriver \
             qemu-audio-spiceer \
