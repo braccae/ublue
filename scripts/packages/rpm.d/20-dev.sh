@@ -18,7 +18,8 @@ else
     ## ACT
     dnf5 install -y \
         act \
-        sqlitebrowser
+        sqlitebrowser \
+        code
 
         group install --with-optional virtualization
         dnf5 install -y --skip-unavailable \
