@@ -19,10 +19,8 @@ else
         input-leap \
         rclone \
         podman-docker
-    
+
     printf %b "-------------------------------\n$NAME setup was successful!\n-------------------------------\n"
 
     exit 0
 fi
-
-

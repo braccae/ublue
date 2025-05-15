@@ -18,9 +18,7 @@ else
     ## ACT
     dnf5 install -y \
         act \
-        sqlitebrowser \
-        kind \
-        zed
+        sqlitebrowser
 
         group install --with-optional virtualization
         dnf5 install -y \
