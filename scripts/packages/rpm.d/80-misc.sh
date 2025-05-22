@@ -18,7 +18,8 @@ else
         zsh \
         input-leap \
         rclone \
-        podman-docker
+        podman-docker \
+        mpv
 
     printf %b "-------------------------------\n$NAME setup was successful!\n-------------------------------\n"
 
