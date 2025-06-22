@@ -18,8 +18,8 @@ else
         zsh \
         input-leap \
         rclone \
-        podman-docker \
-        mpv
+        mpv \
+        borgmatic
 
     printf %b "-------------------------------\n$NAME setup was successful!\n-------------------------------\n"
 
