@@ -84,6 +84,16 @@ else
         libguestfs \
         guestfs-tools \
         libvirt \
+        libvirt-client-qemu \
+        libvirt-daemon-common \
+        libvirt-daemon-driver-storage-disk \
+        libvirt-daemon-driver-storage-iscsi \
+        libvirt-daemon-driver-storage-zfs \
+        libvirt-daemon-kvm \
+        libvirt-daemon-log \
+        libvirt-daemon-qemu \
+        libvirt-libs \
+        virt-install
 
 
     printf %b "-------------------------------\n$NAME setup was successful! \n-------------------------------\n"
