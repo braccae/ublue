@@ -24,7 +24,7 @@ else
         nodejs-npm
 
 
-    group install --with-optional virtualization
+    dnf install @virtualization
     dnf5 install -y --skip-unavailable \
         qemu-audio-dbuser \
         qemu-audio-pipewireriver \
@@ -83,7 +83,8 @@ else
         qemu-user-static-riscv \
         libguestfs \
         guestfs-tools \
-        libvirt
+        libvirt \
+
 
     printf %b "-------------------------------\n$NAME setup was successful! \n-------------------------------\n"
 
