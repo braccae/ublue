@@ -22,7 +22,7 @@ else
         code \
         nodejs \
         nodejs-npm
-        
+
 
     group install --with-optional virtualization
     dnf5 install -y --skip-unavailable \
@@ -82,7 +82,8 @@ else
         qemu-user-static-arm \
         qemu-user-static-riscv \
         libguestfs \
-        guestfs-tools
+        guestfs-tools \
+        libvirt
 
     printf %b "-------------------------------\n$NAME setup was successful! \n-------------------------------\n"
 
