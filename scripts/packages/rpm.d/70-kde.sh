@@ -16,7 +16,8 @@ else
         kmail \
         merkuro \
         konsole \
-        discover \
+        plasma-discover-flatpak \
+        plasma-discover-rpm-ostree \
         yakuake \
         qt6-qtlocation
     # Adding qt6-qtlocation because merkuro doesn't currently pull all dependencies currectly
