@@ -3,7 +3,7 @@
 ###
 # Configuration
 ###
-DISABLED=true
+DISABLED=false
 ####
 
 
@@ -13,8 +13,7 @@ if [ "$DISABLED" = true ]; then
     exit 0
 else
     
-    dnf5 config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_41/home:manuelschneid3r.repo
-
+    dnf config-manager addrepo --from-repofile=https://download.opensuse.org/repositories/home:manuelschneid3r/Fedora_42/home:manuelschneid3r.repo
     # Install
     dnf5 install -y albert
     
