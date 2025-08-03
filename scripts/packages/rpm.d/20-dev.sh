@@ -21,7 +21,8 @@ else
         sqlite \
         code \
         nodejs \
-        nodejs-npm
+        nodejs-npm \
+        nodejs-full-i18n
 
 
     dnf install @virtualization
