@@ -12,15 +12,6 @@ ARG rpm_misc
 
 FROM $base_layer_image:$base_layer_tag
 
-ENV setup_repos=$setup_repos
-ENV rpm_dev=$rpm_dev
-ENV rpm_ansible=$rpm_ansible
-ENV rpm_ghosstty=$rpm_ghosstty
-ENV rpm_albert=$rpm_albert
-ENV rpm_java=$rpm_java
-ENV rpm_kde=$rpm_kde
-ENV rpm_misc=$rpm_misc
-
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
 # FROM ghcr.io/ublue-os/bluefin-nvidia:stable
@@ -38,6 +29,14 @@ COPY rootfs/ /
 COPY scripts/ /tmp/
 
 RUN mkdir -p /var/lib/alternatives && \
-    /tmp/build.sh && \
+    /tmp/build.sh \
+    $setup_repos \
+    $rpm_dev \
+    $rpm_ansible \
+    $rpm_ghosstty \
+    $rpm_albert \
+    $rpm_java \
+    $rpm_kde \
+    $rpm_misc && \
     ostree container commit
     

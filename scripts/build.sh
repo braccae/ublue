@@ -2,6 +2,15 @@
 
 set -ouex pipefail
 
+export setup_repos=$1
+export rpm_dev=$2
+export rpm_ansible=$3
+export rpm_ghosstty=$4
+export rpm_albert=$5
+export rpm_java=$6
+export rpm_kde=$7
+export rpm_misc=$8
+
 ### Install packages
 
 # Packages can be installed from any enabled yum repo on the image.
