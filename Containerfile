@@ -29,14 +29,6 @@ COPY rootfs/ /
 COPY scripts/ /tmp/
 
 RUN mkdir -p /var/lib/alternatives && \
-    /tmp/build.sh \
-    $setup_repos \
-    $rpm_dev \
-    $rpm_ansible \
-    $rpm_ghosstty \
-    $rpm_albert \
-    $rpm_java \
-    $rpm_kde \
-    $rpm_misc && \
+    /tmp/build.sh && \
     ostree container commit
     
