@@ -4,7 +4,7 @@
 # Configuration
 ###
 # DISABLED=false
-if [$rpm_java = true]; then 
+if [ "$rpm_java" = true ]; then 
     DISABLED=false
 else
     DISABLED=true

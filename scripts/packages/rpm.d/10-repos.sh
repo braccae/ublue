@@ -4,7 +4,7 @@
 # Configuration
 ###
 # DISABLED=false
-if [$setup_repos = true]; then 
+if [ "$setup_repos" = true ]; then 
     DISABLED=false
 else
     DISABLED=true

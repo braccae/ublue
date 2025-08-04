@@ -4,7 +4,7 @@
 # Configuration
 ###
 # DISABLED=false
-if [$rpm_ghostty = true]; then 
+if [ "$rpm_ghostty" = true ]; then 
     DISABLED=false
 else
     DISABLED=true

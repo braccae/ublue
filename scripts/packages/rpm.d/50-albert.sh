@@ -4,7 +4,7 @@
 # Configuration
 ###
 # DISABLED=false
-if [$rpm_albert = true]; then 
+if [ "$rpm_albert" = true ]; then 
     DISABLED=false
 else
     DISABLED=true

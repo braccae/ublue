@@ -4,7 +4,7 @@
 # Configuration
 ###
 # DISABLED=false
-if [$rpm_dev = true]; then 
+if [ "$rpm_dev" = true ]; then 
     DISABLED=false
 else
     DISABLED=true
