@@ -10,6 +10,8 @@ ARG rpm_java
 ARG rpm_kde
 ARG rpm_misc
 
+FROM $base_layer_image:$base_layer_tag
+
 ENV setup_repos=$setup_repos
 ENV rpm_dev=$rpm_dev
 ENV rpm_ansible=$rpm_ansible
@@ -18,8 +20,6 @@ ENV rpm_albert=$rpm_albert
 ENV rpm_java=$rpm_java
 ENV rpm_kde=$rpm_kde
 ENV rpm_misc=$rpm_misc
-
-FROM $base_layer_image:$base_layer_tag
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
