@@ -12,6 +12,7 @@ if [ "$DISABLED" = true ]; then
     printf %b "-------------------------------\n$NAME is disabled, skipping...\n-------------------------------\n"
     exit 0
 else
+    dnf5 copr enable ublue/os-akmods
     # Terra
     dnf5 config-manager add-repo --from-repofile=https://github.com/terrapkg/subatomic-repos/raw/main/terra.repo
     dnf5 install terra-release -y
