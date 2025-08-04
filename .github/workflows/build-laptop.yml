@@ -111,7 +111,7 @@ jobs:
             ./Containerfile
           # Postfix image name with -custom to make it a little more descriptive
           # Syntax: https://docs.github.com/en/actions/learn-github-actions/expressions#format
-          build-args:
+          build-args: |
             base_layer_image=ghcr.io/ublue-os/bazzite-gnome
             base_layer_tag=latest
             setup_repos=true
