@@ -4,7 +4,7 @@
 
 for package in /tmp/packages/rpm.d/*.sh;
 do
-    bash /tmp/packages/rpm.d/"$package"
+    bash "$package"
 
 done
 
