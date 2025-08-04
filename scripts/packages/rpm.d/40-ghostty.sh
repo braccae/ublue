@@ -3,7 +3,12 @@
 ###
 # Configuration
 ###
-DISABLED=true
+# DISABLED=false
+if [$rpm_ghostty = true]; then 
+    DISABLED=false
+else
+    DISABLED=true
+fi
 ####
 
 

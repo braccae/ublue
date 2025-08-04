@@ -3,7 +3,12 @@
 ###
 # Configuration
 ###
-DISABLED=false
+# DISABLED=false
+if [$rpm_misc = true]; then 
+    DISABLED=false
+else
+    DISABLED=true
+fi
 ####
 
 

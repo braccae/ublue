@@ -1,4 +1,16 @@
-FROM ghcr.io/ublue-os/bazzite:latest
+
+ARG base_layer_image
+ARG base_layer_tag
+ARG setup_repos
+ARG rpm_dev
+ARG rpm_ansible
+ARG rpm_ghosstty
+ARG rpm_albert
+ARG rpm_java
+ARG rpm_kde
+ARG rpm_misc
+
+FROM $base_layer_image:$base_layer_tag
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
