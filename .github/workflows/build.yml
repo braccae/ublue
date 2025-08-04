@@ -114,14 +114,6 @@ jobs:
           build-args: |
             base_layer_image=ghcr.io/ublue-os/bazzite
             base_layer_tag=latest
-            setup_repos=true
-            rpm_dev=true
-            rpm_ansible=true
-            rpm_ghosstty=true
-            rpm_albert=true
-            rpm_java=true
-            rpm_kde=true
-            rpm_misc=true
           image: ${{ env.IMAGE_NAME }}
           tags: ${{ steps.metadata.outputs.tags }}
           labels: ${{ steps.metadata.outputs.labels }}
