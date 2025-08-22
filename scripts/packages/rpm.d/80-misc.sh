@@ -19,7 +19,8 @@ else
         input-leap \
         rclone \
         mpv \
-        borgmatic
+        borgmatic \
+        sqlite-devel
 
     printf %b "-------------------------------\n$NAME setup was successful!\n-------------------------------\n"
 
